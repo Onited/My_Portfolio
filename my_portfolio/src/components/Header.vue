@@ -4,7 +4,7 @@
             <img src="../assets/pp.jpg" alt="Votre photo" class="profile-photo" />
         </div>
         <div class="center-container">
-            <div class="name">BAUDRY Dorian</div>
+            <AnimatedText />
         </div>
         <div class="right-container">
             <nav class="navbar">
@@ -19,8 +19,13 @@
 
 
 <script>
+import AnimatedText from '@/components/AnimatedText.vue';
+
 export default {
-    name: 'HeaderHome'
+    name: 'HeaderHome',
+    components: {
+        AnimatedText
+    }
 }
 </script>
 
@@ -33,7 +38,8 @@ export default {
     padding: 10px;
 }
 
-.left-container, .right-container {
+.left-container,
+.right-container {
     flex: 1;
 }
 
@@ -49,12 +55,6 @@ export default {
     object-fit: cover;
 }
 
-.name {
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-}
-
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -64,6 +64,7 @@ export default {
 .nav-link {
     color: white;
     text-decoration: none;
+    font-size: 20px;
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -71,5 +72,20 @@ export default {
 
 .nav-link:hover {
     background-color: #555;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+    .nav-link {
+    font-size: 16px;
+    }
 }
 </style>
