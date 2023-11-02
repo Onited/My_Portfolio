@@ -8,10 +8,10 @@
         </div>
         <div class="right-container">
             <nav class="navbar">
-                <a href="#home" class="nav-link">Accueil</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#resume" class="nav-link">CV</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="/home" class="nav-link">Accueil</a>
+                <a href="portfolio" class="nav-link">Portfolio</a>
+                <a href="resume" class="nav-link">CV</a>
+                <a href="contact" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>

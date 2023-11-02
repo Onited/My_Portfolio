@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            text: "DORIAN Baudry",
+            text: "Dorian BAUDRY",
             index: 0,
             chars: 0,
             speed: 100,
