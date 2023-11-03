@@ -6,7 +6,7 @@ import ResumePage from '../views/ResumePage.vue'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: HomeView
   },

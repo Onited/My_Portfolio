@@ -9,7 +9,7 @@
         </div> -->
         <div class="right-container">
             <nav class="navbar">
-                <router-link to="/home" class="nav-link" active-class="router-link-active">Accueil</router-link>
+                <router-link to="/" class="nav-link" active-class="router-link-active">Accueil</router-link>
                 <router-link to="/portfolio" class="nav-link" active-class="router-link-active">Portfolio</router-link>
                 <router-link to="/resume" class="nav-link" active-class="router-link-active">CV</router-link>
                 <router-link to="/contact" class="nav-link" active-class="router-link-active">Contact</router-link>
