@@ -87,9 +87,12 @@ export default {
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    background-color: #008CBA;
+    background-color: #000022;
     color: white;
 }
 
+.cta-button:hover {
+    background-color: #08083b;
+}
 
 </style>

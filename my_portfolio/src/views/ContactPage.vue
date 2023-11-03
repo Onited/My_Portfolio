@@ -3,32 +3,30 @@
         <h1 class="title">Me contacter</h1>
         <div class="card-form">
             <div class="center-form">
-                <form @submit.prevent="handleSubmit">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" class="transparent-input" v-model="name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="transparent-input" v-model="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" class="transparent-input" v-model="subject" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="transparent-input" v-model="message" required></textarea>
-                    </div>
-                    <button type="submit">Envoyer</button>
-                </form>
+                <p>
+                    Pour toute demande de renseignements ou pour discuter de projets futurs, je suis plus réactif par email
+                    ou
+                    via LinkedIn. N'hésitez pas à m'envoyer un message directement à <a
+                        href="mailto:dorian1.baudry@epitech.eu">dorian1.baudry@epitech.eu</a> ou à me contacter sur <a
+                        href="https://www.linkedin.com/in/dorian-baudry34/" target="_blank">LinkedIn</a>. Je serais ravi
+                    d'entendre
+                    parler de vous !
+                </p>
+                <div class="contact-icons">
+                    <a href="mailto:dorian1.baudry@epitech.eu" class="icon">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/dorian-baudry34/" target="_blank" class="icon">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {  
+export default {
     data() {
         return {
             name: '',
@@ -60,29 +58,19 @@ label {
     margin-bottom: 5px;
 }
 
-.title{
+.title {
     color: #8F754F;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #008CBA;
-    color: white;
-    cursor: pointer;
 }
 
 .center-form {
     max-width: 80%;
     margin: 0 auto;
+    color: white;
+}
+
+a {
+    color: #8F754F;
+    text-decoration: none;
 }
 
 .transparent-input {
@@ -94,21 +82,50 @@ button {
 
 /* Vous pouvez également définir une bordure en cas de focus si vous le souhaitez */
 .transparent-input:focus {
-    border-bottom: 2px solid #008CBA; /* Par exemple, une bordure inférieure bleue */
+    border-bottom: 2px solid #008CBA;
+    /* Par exemple, une bordure inférieure bleue */
 }
 
-.card-form{
-    backdrop-filter: blur(10px); /* Applique un effet de flou de 10 pixels */
-    background-color: rgba(143, 143, 143, 0.287); /* Arrière-plan semi-transparent */
+.card-form {
+    backdrop-filter: blur(10px);
+    /* Applique un effet de flou de 10 pixels */
+    background-color: rgba(143, 143, 143, 0.287);
+    /* Arrière-plan semi-transparent */
     width: 40%;
     padding: 2%;
     border-radius: 10px;
     margin: 0 auto;
 }
 
-label{
+label {
     color: white;
     text-align: left;
 }
 
-</style>
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    color: white;
+    justify-content: center;
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    .card-form {
+        width: 80%;
+    }
+
+    .center-form {
+        max-width: 100%;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}</style>
