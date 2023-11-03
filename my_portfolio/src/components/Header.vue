@@ -35,7 +35,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #010101;
 }
 
 .left-container, .right-container {
@@ -47,21 +47,14 @@ export default {
     text-align: center;
 }
 
-.profile-photo {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-}
-
 .navbar {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-link {
-    color: white;
+    color: #8F754F;
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
@@ -71,6 +64,7 @@ export default {
 
 .nav-link:hover {
     background-color: #555;
+    color: white;
 }
 
 @media (min-width: 768px) {

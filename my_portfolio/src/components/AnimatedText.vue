@@ -49,9 +49,10 @@ body {
     line-height: 50px;
     font-size: 30px;
     margin-left: 20px;
+    font-weight: bold;
     top: 0;
     bottom: 0;
-    color: white;
+    color: #8F754F;
 }
 
 .text .content {
@@ -62,8 +63,8 @@ body {
     display: inline-block;
     height: 3px;
     width: 20px;
-    background-color: #3498db;
-    animation: blink .5s infinite linear;
+    background-color: white;
+    animation: blink .6s infinite linear;
 }
 
 @media (max-width: 767px) {

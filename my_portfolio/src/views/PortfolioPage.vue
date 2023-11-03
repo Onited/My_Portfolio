@@ -1,6 +1,6 @@
 <template>
     <div class="portfolio">
-        <h1>Mes Projets</h1>
+        <h1 class="title">Mes Projets</h1>
         <div class="projects">
             <div class="project-card" v-for="project in projects" :key="project.id">
                 <img :src="project.image" :alt="project.title" />
