@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="resume-page">
         <h1>Mon CV</h1>
         <div class="pdf-viewer">
@@ -39,4 +39,91 @@ export default {
 .button:hover {
     background-color: #005f5f;
 }
-</style>
+</style> -->
+
+<template>
+    <div class="resume-page">
+        <h1 class="title">Mon CV</h1>
+        <div class="download-button">
+            <a href="/cv/CV_Dorian_Baudry.pdf" download="CV_Dorian_Baudry.pdf" class="button">Télécharger mon CV</a>
+        </div>
+        <div class="pdf-viewer">
+            <object data="/cv/CV_Dorian_Baudry.pdf" type="application/pdf" width="100%" height="100%">
+                <embed src="/cv/CV_Dorian_Baudry.pdf" type="application/pdf" width="100%" height="100%" />
+            </object>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'ResumePage'
+}
+</script>
+
+<style scoped>
+.resume-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.pdf-viewer {
+    width: 100%;
+    aspect-ratio: 8.5 / 11;
+    /* ratio d'aspect du format lettre */
+    max-width: 800px;
+    /* largeur maximale pour le PDF */
+    margin: auto;
+    /* centrer le PDF */
+    border: 1px solid #ddd;
+    /* bordure optionnelle autour du PDF */
+}
+
+.download-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.title {
+    color: #8F754F;
+}
+
+.button:hover {
+    background-color: #005f5f;
+}
+
+/* styles pour les écrans plus petits */
+@media (max-width: 767px) {
+    .pdf-viewer {
+        max-width: 100%;
+    }
+
+    .pdf-viewer .title {
+        font-size: 20px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;  /* Taille de police réduite */
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+/* styles pour les écrans plus grands */
+@media (min-width: 768px) {
+    .pdf-viewer {
+        max-width: 800px;
+    }
+}</style>

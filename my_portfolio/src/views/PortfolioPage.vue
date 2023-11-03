@@ -3,10 +3,12 @@
         <h1 class="title">Mes Projets</h1>
         <div class="projects">
             <div class="project-card" v-for="project in projects" :key="project.id">
-                <img :src="project.image" :alt="project.title" />
-                <h2 class="title">{{ project.title }}</h2>
-                <p class="descripton">{{ project.description }}</p>
-                <a :href="project.link" target="_blank" class="cta-button">Voir le projet</a>
+                <div class="card">
+                    <img :src="project.image" :alt="project.title" />
+                    <h2 class="title">{{ project.title }}</h2>
+                    <p class="descripton">{{ project.description }}</p>
+                    <a :href="project.link" target="_blank" class="cta-button">Voir le projet</a>
+                </div>
             </div>
         </div>
     </div>
@@ -58,8 +60,8 @@ export default {
 }
 
 .project-card {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    backdrop-filter: blur(10px); /* Applique un effet de flou de 10 pixels */
+    background-color: rgba(143, 143, 143, 0.287); /* Arrière-plan semi-transparent */
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -75,7 +77,7 @@ export default {
 }
 
 .descripton{
-    color: #385F71;
+    color: white;
     height: 150px;
 }
 
@@ -88,5 +90,6 @@ export default {
     background-color: #008CBA;
     color: white;
 }
+
 
 </style>

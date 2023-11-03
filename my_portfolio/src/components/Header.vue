@@ -9,10 +9,14 @@
         </div> -->
         <div class="right-container">
             <nav class="navbar">
-                <a href="/home" class="nav-link">Accueil</a>
+                <!-- <a href="home" class="nav-link">Accueil</a>
                 <a href="portfolio" class="nav-link">Portfolio</a>
                 <a href="resume" class="nav-link">CV</a>
-                <a href="contact" class="nav-link">Contact</a>
+                <a href="contact" class="nav-link">Contact</a> -->
+                <router-link to="/home" class="nav-link" active-class="router-link-active">Accueil</router-link>
+                <router-link to="/portfolio" class="nav-link" active-class="router-link-active">Portfolio</router-link>
+                <router-link to="/resume" class="nav-link" active-class="router-link-active">CV</router-link>
+                <router-link to="/contact" class="nav-link" active-class="router-link-active">Contact</router-link>
             </nav>
         </div>
     </header>
@@ -51,6 +55,12 @@ export default {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+    margin-bottom: 10px;
+}
+
+.router-link-active {
+    background-color: #555;
+    color: white !important;
 }
 
 .nav-link {
