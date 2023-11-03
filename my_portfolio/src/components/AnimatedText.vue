@@ -44,11 +44,11 @@ body {
 }
 
 .text {
-    width: 100%;
-    text-align: center;
+    width: fit-content;
     height: 50px;
     line-height: 50px;
     font-size: 30px;
+    margin-left: 20px;
     top: 0;
     bottom: 0;
     color: white;
@@ -64,6 +64,13 @@ body {
     width: 20px;
     background-color: #3498db;
     animation: blink .5s infinite linear;
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 20px;
+        margin-left: 0px;
+    }
 }
 
 @keyframes blink {

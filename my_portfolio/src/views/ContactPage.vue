@@ -43,7 +43,7 @@ export default {
     }
 };
 </script>
-  
+
 <style scoped>
 .contact-page {
     padding: 20px;
@@ -79,8 +79,8 @@ button {
     max-width: 500px;
     margin: 0 auto;
 }
+
 button:hover {
     background-color: #005f5f;
 }
 </style>
-  

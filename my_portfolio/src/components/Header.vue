@@ -1,11 +1,12 @@
 <template>
     <header class="header">
         <div class="left-container">
-            <img src="../assets/pp.jpg" alt="Votre photo" class="profile-photo" />
-        </div>
-        <div class="center-container">
+            <!-- <img src="../assets/pp.jpg" alt="Votre photo" class="profile-photo" /> -->
             <AnimatedText />
         </div>
+        <!-- <div class="center-container">
+            
+        </div> -->
         <div class="right-container">
             <nav class="navbar">
                 <a href="/home" class="nav-link">Accueil</a>
@@ -35,11 +36,9 @@ export default {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 10px;
 }
 
-.left-container,
-.right-container {
+.left-container, .right-container {
     flex: 1;
 }
 
@@ -86,6 +85,9 @@ export default {
     }
     .nav-link {
     font-size: 16px;
+    }
+    nav{
+        padding: 0px;
     }
 }
 </style>
