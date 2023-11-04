@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomePage.vue'
 import ContactPage from '../views/ContactPage.vue'
 import PortfolioPage from '../views/PortfolioPage.vue'
@@ -28,8 +28,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
-})
-
+  history: createWebHashHistory(),
+  routes,
+});
 export default router

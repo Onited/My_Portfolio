@@ -2,12 +2,12 @@
     <div class="resume-page">
         <h1 class="title">Mon CV</h1>
         <div class="download-button">
-            <a href="/cv/CV_Dorian_Baudry.pdf" download="CV_Dorian_Baudry.pdf" class="button">Télécharger mon CV</a>
+            <a href="/My_Portfolio/cv/CV_Dorian_Baudry.pdf" download="CV_Dorian_Baudry.pdf" class="button">Télécharger mon CV</a>
         </div>
         <div class="pdf-viewer">
-            <object data="/cv/CV_Dorian_Baudry.pdf" type="application/pdf" width="100%" height="100%">
-                <embed src="/cv/CV_Dorian_Baudry.pdf" type="application/pdf" width="100%" height="100%" />
-            </object>
+            <object data="/My_Portfolio/cv/CV_Dorian_Baudry.pdf" type="application/pdf" width="100%" height="1200px">
+            <embed src="/My_Portfolio/cv/CV_Dorian_Baudry.pdf" type="application/pdf" />
+</object>
         </div>
     </div>
 </template>

@@ -21,6 +21,7 @@ Le portfolio est divisé en plusieurs sections :
 ## Installation Locale
 
 1. Clonez le répertoire du projet :
+
 ```bash
 git clone https://github.com/Onited/portfolio.git
 cd portfolio
