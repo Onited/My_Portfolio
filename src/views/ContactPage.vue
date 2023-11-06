@@ -4,7 +4,7 @@
         <div class="card-form">
             <div class="center-form">
                 <p>
-                    Pour toute demande de renseignements ou pour discuter de projets futurs, je suis plus réactif par email
+                    Pour toute demande de renseignements ou pour échanger sur vos projets futurs, je suis plus réactif par email
                     ou
                     via LinkedIn. N'hésitez pas à m'envoyer un message directement à <a
                         href="mailto:dorian1.baudry@epitech.eu">dorian1.baudry@epitech.eu</a> ou à me contacter sur <a
@@ -37,7 +37,6 @@ export default {
     },
     methods: {
         handleSubmit() {
-            // Logique pour traiter le formulaire
             console.log('Formulaire soumis:', this.name, this.email, this.subject, this.message);
         }
     }
@@ -80,17 +79,13 @@ a {
     box-shadow: none;
 }
 
-/* Vous pouvez également définir une bordure en cas de focus si vous le souhaitez */
 .transparent-input:focus {
     border-bottom: 2px solid #008CBA;
-    /* Par exemple, une bordure inférieure bleue */
 }
 
 .card-form {
     backdrop-filter: blur(10px);
-    /* Applique un effet de flou de 10 pixels */
     background-color: rgba(143, 143, 143, 0.287);
-    /* Arrière-plan semi-transparent */
     width: 40%;
     padding: 2%;
     border-radius: 10px;
