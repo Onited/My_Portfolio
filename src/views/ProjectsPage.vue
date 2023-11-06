@@ -40,7 +40,6 @@ export default {
                     image: 'https://i.postimg.cc/QMqLjGvV/DALL-E-2023-11-03-11-45-38-Vector-illustration-of-an-elegant-portfolio-folder-with-a-clean-and-mod.png',
                     link: 'https://github.com/Onited/My_Portfolio'
                 },
-                // ... autres projets
             ]
         };
     }
@@ -60,8 +59,8 @@ export default {
 }
 
 .project-card {
-    backdrop-filter: blur(10px); /* Applique un effet de flou de 10 pixels */
-    background-color: rgba(143, 143, 143, 0.287); /* Arrière-plan semi-transparent */
+    backdrop-filter: blur(10px);
+    background-color: rgba(143, 143, 143, 0.287);
     padding: 20px;
     border-radius: 8px;
     width: 300px;

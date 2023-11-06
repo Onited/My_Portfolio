@@ -1,12 +1,8 @@
 <template>
     <header class="header">
         <div class="left-container">
-            <!-- <img src="../assets/pp.jpg" alt="Votre photo" class="profile-photo" /> -->
             <AnimatedText />
         </div>
-        <!-- <div class="center-container">
-            
-        </div> -->
         <div class="right-container">
             <nav class="navbar">
                 <router-link to="/" class="nav-link" active-class="router-link-active">Accueil</router-link>

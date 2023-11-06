@@ -1,55 +1,16 @@
-<!-- <template>
-  <div class="home">
-    <p>Développeur Full-Stack passionné avec X années d'expérience...</p>
-  </div>
-</template>
-
-<script>
-
-export default {
-  name: 'HomePage'
-}
-</script>
-
-<style scoped>
-.home {
-  text-align: center;
-  padding: 50px;
-}
-
-.home h1 {
-  font-size: 48px;
-}
-
-.align-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.home{
-  color: white;
-}
-
-</style>
--->
-
 <template>
   <div class="home">
-    <!-- Introduction Personnelle -->
     <div class="intro">
       <img src="../assets/pp.jpg" alt="Votre photo" class="profile-photo" />
       <h1>Bonjour, je suis Dorian BAUDRY</h1>
       <p>Développeur Web Full-Stack basé à Montpellier</p>
     </div>
 
-    <!-- En-tête Accrocheur -->
+    
     <div class="header">
       <h2>Compétences Principales</h2>
     </div>
 
-    <!-- Résumé de Compétences -->
     <div class="skills">
       <div class="skill-item">
         <i class="fas fa-database"></i>
