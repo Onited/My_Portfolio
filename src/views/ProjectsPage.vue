@@ -7,7 +7,9 @@
                     <img :src="project.image" :alt="project.title" />
                     <h2 class="title">{{ project.title }}</h2>
                     <p class="descripton">{{ project.description }}</p>
-                    <a :href="project.link" target="_blank" class="cta-button">Voir le projet</a>
+                    <a :href="project.link" class="cta-button" target="_blank">
+                        <i class="fab fa-github"></i> Voir projet
+                    </a>
                 </div>
             </div>
         </div>
