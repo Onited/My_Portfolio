@@ -38,9 +38,16 @@ export default {
                 {
                     id: 1,
                     title: 'Portfolio',
-                    description: 'Ce répertoire contient mon portfolio personnel développé avec Vue.js. Il présente une sélection de mes projets, mon expérience et mes compétences, et fournit également un moyen de me contacter. [En cours de développement]',
+                    description: 'Ce répertoire contient mon portfolio personnel développé avec Vue.js. Il présente une sélection de mes projets, mon expérience et mes compétences, et fournit également un moyen de me contacter.',
                     image: 'https://i.postimg.cc/QMqLjGvV/DALL-E-2023-11-03-11-45-38-Vector-illustration-of-an-elegant-portfolio-folder-with-a-clean-and-mod.png',
                     link: 'https://github.com/Onited/My_Portfolio'
+                },
+                {
+                    id: 1,
+                    title: 'ChatPulse',
+                    description: 'ChatPulse est un projet personnel dévloppé avec React.js et Firebase. Il s\'agit d\'une application de chat en temps réel, celle-ci permet aux utilisateurs de créer un compte, de se connecter et de discuter avec d\'autres utilisateurs. (En cours de développement)',
+                    image: 'https://i.postimg.cc/jSJxBpGz/Chat-Pulse-Logo-2023-12-20.png',
+                    link: 'https://github.com/Onited/ChatPulse'
                 },
             ]
         };
