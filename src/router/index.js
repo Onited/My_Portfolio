@@ -31,4 +31,5 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
-export default router
+
+export default router;
